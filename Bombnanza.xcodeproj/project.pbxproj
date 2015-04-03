@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC209FF01ACF297D002F5F3D /* KnowledgeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC209FEF1ACF297D002F5F3D /* KnowledgeTableViewController.m */; };
+		BC209FF31ACF299C002F5F3D /* BombRangeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC209FF21ACF299C002F5F3D /* BombRangeTableViewController.m */; };
 		BCB0F0FB1ACE4DFC00EA98EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F0FA1ACE4DFC00EA98EE /* main.m */; };
 		BCB0F0FE1ACE4DFC00EA98EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F0FD1ACE4DFC00EA98EE /* AppDelegate.m */; };
 		BCB0F1011ACE4DFC00EA98EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F1001ACE4DFC00EA98EE /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC209FEE1ACF297D002F5F3D /* KnowledgeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeTableViewController.h; sourceTree = "<group>"; };
+		BC209FEF1ACF297D002F5F3D /* KnowledgeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeTableViewController.m; sourceTree = "<group>"; };
+		BC209FF11ACF299C002F5F3D /* BombRangeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BombRangeTableViewController.h; sourceTree = "<group>"; };
+		BC209FF21ACF299C002F5F3D /* BombRangeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BombRangeTableViewController.m; sourceTree = "<group>"; };
 		BCB0F0F51ACE4DFB00EA98EE /* Bombnanza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bombnanza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB0F0F91ACE4DFC00EA98EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB0F0FA1ACE4DFC00EA98EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +92,10 @@
 				BCB0F0FF1ACE4DFC00EA98EE /* ViewController.h */,
 				BCB0F1001ACE4DFC00EA98EE /* ViewController.m */,
 				BCB0F1021ACE4DFC00EA98EE /* Main.storyboard */,
+				BC209FEE1ACF297D002F5F3D /* KnowledgeTableViewController.h */,
+				BC209FEF1ACF297D002F5F3D /* KnowledgeTableViewController.m */,
+				BC209FF11ACF299C002F5F3D /* BombRangeTableViewController.h */,
+				BC209FF21ACF299C002F5F3D /* BombRangeTableViewController.m */,
 				BCB0F1051ACE4DFC00EA98EE /* Images.xcassets */,
 				BCB0F1071ACE4DFC00EA98EE /* LaunchScreen.xib */,
 				BCB0F0F81ACE4DFC00EA98EE /* Supporting Files */,
@@ -168,6 +178,7 @@
 				TargetAttributes = {
 					BCB0F0F41ACE4DFB00EA98EE = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Z94QF988HJ;
 					};
 					BCB0F10D1ACE4DFC00EA98EE = {
 						CreatedOnToolsVersion = 6.2;
@@ -219,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC209FF01ACF297D002F5F3D /* KnowledgeTableViewController.m in Sources */,
+				BC209FF31ACF299C002F5F3D /* BombRangeTableViewController.m in Sources */,
 				BCB0F1011ACE4DFC00EA98EE /* ViewController.m in Sources */,
 				BCB0F0FE1ACE4DFC00EA98EE /* AppDelegate.m in Sources */,
 				BCB0F0FB1ACE4DFC00EA98EE /* main.m in Sources */,
@@ -297,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,9 +358,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bombnanza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -355,9 +372,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bombnanza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -414,6 +435,7 @@
 				BCB0F11A1ACE4DFC00EA98EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCB0F11B1ACE4DFC00EA98EE /* Build configuration list for PBXNativeTarget "BombnanzaTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +444,7 @@
 				BCB0F11D1ACE4DFC00EA98EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
