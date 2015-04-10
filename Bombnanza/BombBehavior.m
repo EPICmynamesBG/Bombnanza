@@ -39,9 +39,21 @@
     if (!_animationOptions) {
         _animationOptions = [[UIDynamicItemBehavior alloc] init];
         _animationOptions.allowsRotation = NO;
+        _animationOptions.elasticity = 0.0;
+        _animationOptions.resistance = 0;
     }
     return _animationOptions;
 }
+/*
+- (void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p
+{
+    self.item.resistance = 100;
+}
+
+- (void)collisionBehavior:(UICollisionBehavior *)behavior endedContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier
+{
+    self.item.resistance = 0;
+}*/
 
 - (void)addItem:(id<UIDynamicItem>)item
 {

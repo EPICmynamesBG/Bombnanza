@@ -68,7 +68,6 @@
     if ([segue.identifier isEqualToString:@"testingRange"]){
         TestingRangeViewController *destination = segue.destinationViewController;
         NSDictionary *temp = [[NSDictionary alloc] initWithDictionary:[self.jsonData objectAtIndex:[sender tag]]];
-        NSLog(@"%@", temp);
         destination.bombDict = temp;
     }
 }

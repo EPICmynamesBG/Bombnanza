@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BombBehavior : UIDynamicBehavior
+@interface BombBehavior : UIDynamicBehavior <UIDynamicAnimatorDelegate>
 - (void)addItem:(id <UIDynamicItem>)item;
 - (void)removeItem:(id <UIDynamicItem>)item;
 @end
