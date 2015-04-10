@@ -7,95 +7,65 @@
 //
 
 #import "KnowledgeTableViewController.h"
+#import "OneBombViewController.h"
 
 @interface KnowledgeTableViewController ()
-
+@property (strong, nonatomic) NSArray *jsonData;
 @end
 
 @implementation KnowledgeTableViewController
-
+#define DATAPATH @"Bombs.json"
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = NO;
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    _jsonData = [[NSArray alloc] initWithArray:[self loadJSON]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [self.jsonData count];
 }
 
-/*
+- (NSArray *) loadJSON {
+    NSString *filepath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:DATAPATH];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSData *data = [fileManager contentsAtPath:filepath];
+    NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data
+                                                             options:0
+                                                               error:NULL];
+    return [jsonData objectForKey:@"data"];
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"KnowledgeCell" forIndexPath:indexPath];
+    NSString *title = [[self.jsonData objectAtIndex:indexPath.row] objectForKey:@"name"];
+    NSString *country = [[self.jsonData objectAtIndex:indexPath.row] objectForKey:@"country"];
+    cell.tag = indexPath.row;
+    cell.textLabel.text = title;
+    cell.detailTextLabel.text = country;
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"knowBomb"]){
+        OneBombViewController *destination = segue.destinationViewController;
+        destination.bombDict = [self.jsonData objectAtIndex:[sender tag]];
+    }
 }
-*/
+
 
 @end

@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC076B931AD77440008D47BC /* BombnanzaTests in Resources */ = {isa = PBXBuildFile; fileRef = BC076B921AD77440008D47BC /* BombnanzaTests */; };
+		BC076B961AD77DD8008D47BC /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC076B951AD77DD8008D47BC /* PageContentViewController.m */; };
+		BC076B991AD78D04008D47BC /* OneBombViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC076B981AD78D04008D47BC /* OneBombViewController.m */; };
+		BC076B9C1AD796DF008D47BC /* TestingRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC076B9B1AD796DF008D47BC /* TestingRangeViewController.m */; };
+		BC076B9F1AD79946008D47BC /* BombBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = BC076B9E1AD79946008D47BC /* BombBehavior.m */; };
 		BC209FF01ACF297D002F5F3D /* KnowledgeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC209FEF1ACF297D002F5F3D /* KnowledgeTableViewController.m */; };
 		BC209FF31ACF299C002F5F3D /* BombRangeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC209FF21ACF299C002F5F3D /* BombRangeTableViewController.m */; };
+		BC3B12461AD741B7000CFEEE /* AfterEffectsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3B12451AD741B7000CFEEE /* AfterEffectsPageViewController.m */; };
+		BC3B12481AD74378000CFEEE /* Bombs.json in Resources */ = {isa = PBXBuildFile; fileRef = BC3B12471AD74378000CFEEE /* Bombs.json */; };
+		BC3B12491AD7552B000CFEEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F1021ACE4DFC00EA98EE /* Main.storyboard */; };
+		BC3B124A1AD7552E000CFEEE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F1071ACE4DFC00EA98EE /* LaunchScreen.xib */; };
 		BCB0F0FB1ACE4DFC00EA98EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F0FA1ACE4DFC00EA98EE /* main.m */; };
 		BCB0F0FE1ACE4DFC00EA98EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F0FD1ACE4DFC00EA98EE /* AppDelegate.m */; };
 		BCB0F1011ACE4DFC00EA98EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F1001ACE4DFC00EA98EE /* ViewController.m */; };
-		BCB0F1041ACE4DFC00EA98EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F1021ACE4DFC00EA98EE /* Main.storyboard */; };
 		BCB0F1061ACE4DFC00EA98EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F1051ACE4DFC00EA98EE /* Images.xcassets */; };
-		BCB0F1091ACE4DFC00EA98EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F1071ACE4DFC00EA98EE /* LaunchScreen.xib */; };
-		BCB0F1151ACE4DFC00EA98EE /* BombnanzaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F1141ACE4DFC00EA98EE /* BombnanzaTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +35,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC076B921AD77440008D47BC /* BombnanzaTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BombnanzaTests; sourceTree = "<group>"; };
+		BC076B941AD77DD8008D47BC /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		BC076B951AD77DD8008D47BC /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		BC076B971AD78D04008D47BC /* OneBombViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneBombViewController.h; sourceTree = "<group>"; };
+		BC076B981AD78D04008D47BC /* OneBombViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneBombViewController.m; sourceTree = "<group>"; };
+		BC076B9A1AD796DF008D47BC /* TestingRangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingRangeViewController.h; sourceTree = "<group>"; };
+		BC076B9B1AD796DF008D47BC /* TestingRangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingRangeViewController.m; sourceTree = "<group>"; };
+		BC076B9D1AD79946008D47BC /* BombBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BombBehavior.h; sourceTree = "<group>"; };
+		BC076B9E1AD79946008D47BC /* BombBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BombBehavior.m; sourceTree = "<group>"; };
 		BC209FEE1ACF297D002F5F3D /* KnowledgeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeTableViewController.h; sourceTree = "<group>"; };
 		BC209FEF1ACF297D002F5F3D /* KnowledgeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeTableViewController.m; sourceTree = "<group>"; };
 		BC209FF11ACF299C002F5F3D /* BombRangeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BombRangeTableViewController.h; sourceTree = "<group>"; };
 		BC209FF21ACF299C002F5F3D /* BombRangeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BombRangeTableViewController.m; sourceTree = "<group>"; };
+		BC3B12441AD741B7000CFEEE /* AfterEffectsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AfterEffectsPageViewController.h; sourceTree = "<group>"; };
+		BC3B12451AD741B7000CFEEE /* AfterEffectsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfterEffectsPageViewController.m; sourceTree = "<group>"; };
+		BC3B12471AD74378000CFEEE /* Bombs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bombs.json; sourceTree = "<group>"; };
 		BCB0F0F51ACE4DFB00EA98EE /* Bombnanza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bombnanza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB0F0F91ACE4DFC00EA98EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB0F0FA1ACE4DFC00EA98EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,8 +62,6 @@
 		BCB0F1051ACE4DFC00EA98EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BCB0F1081ACE4DFC00EA98EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BCB0F10E1ACE4DFC00EA98EE /* BombnanzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BombnanzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCB0F1131ACE4DFC00EA98EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCB0F1141ACE4DFC00EA98EE /* BombnanzaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BombnanzaTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				BCB0F0F71ACE4DFB00EA98EE /* Bombnanza */,
-				BCB0F1111ACE4DFC00EA98EE /* BombnanzaTests */,
+				BC076B921AD77440008D47BC /* BombnanzaTests */,
 				BCB0F0F61ACE4DFB00EA98EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,10 +108,18 @@
 				BCB0F0FF1ACE4DFC00EA98EE /* ViewController.h */,
 				BCB0F1001ACE4DFC00EA98EE /* ViewController.m */,
 				BCB0F1021ACE4DFC00EA98EE /* Main.storyboard */,
-				BC209FEE1ACF297D002F5F3D /* KnowledgeTableViewController.h */,
-				BC209FEF1ACF297D002F5F3D /* KnowledgeTableViewController.m */,
 				BC209FF11ACF299C002F5F3D /* BombRangeTableViewController.h */,
 				BC209FF21ACF299C002F5F3D /* BombRangeTableViewController.m */,
+				BC076B9A1AD796DF008D47BC /* TestingRangeViewController.h */,
+				BC076B9B1AD796DF008D47BC /* TestingRangeViewController.m */,
+				BC209FEE1ACF297D002F5F3D /* KnowledgeTableViewController.h */,
+				BC209FEF1ACF297D002F5F3D /* KnowledgeTableViewController.m */,
+				BC076B971AD78D04008D47BC /* OneBombViewController.h */,
+				BC076B981AD78D04008D47BC /* OneBombViewController.m */,
+				BC3B12441AD741B7000CFEEE /* AfterEffectsPageViewController.h */,
+				BC3B12451AD741B7000CFEEE /* AfterEffectsPageViewController.m */,
+				BC076B941AD77DD8008D47BC /* PageContentViewController.h */,
+				BC076B951AD77DD8008D47BC /* PageContentViewController.m */,
 				BCB0F1051ACE4DFC00EA98EE /* Images.xcassets */,
 				BCB0F1071ACE4DFC00EA98EE /* LaunchScreen.xib */,
 				BCB0F0F81ACE4DFC00EA98EE /* Supporting Files */,
@@ -106,25 +130,11 @@
 		BCB0F0F81ACE4DFC00EA98EE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC076B9D1AD79946008D47BC /* BombBehavior.h */,
+				BC076B9E1AD79946008D47BC /* BombBehavior.m */,
 				BCB0F0F91ACE4DFC00EA98EE /* Info.plist */,
 				BCB0F0FA1ACE4DFC00EA98EE /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BCB0F1111ACE4DFC00EA98EE /* BombnanzaTests */ = {
-			isa = PBXGroup;
-			children = (
-				BCB0F1141ACE4DFC00EA98EE /* BombnanzaTests.m */,
-				BCB0F1121ACE4DFC00EA98EE /* Supporting Files */,
-			);
-			path = BombnanzaTests;
-			sourceTree = "<group>";
-		};
-		BCB0F1121ACE4DFC00EA98EE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BCB0F1131ACE4DFC00EA98EE /* Info.plist */,
+				BC3B12471AD74378000CFEEE /* Bombs.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -173,7 +183,7 @@
 		BCB0F0ED1ACE4DFB00EA98EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Brandon Groff";
 				TargetAttributes = {
 					BCB0F0F41ACE4DFB00EA98EE = {
@@ -210,9 +220,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCB0F1041ACE4DFC00EA98EE /* Main.storyboard in Resources */,
-				BCB0F1091ACE4DFC00EA98EE /* LaunchScreen.xib in Resources */,
+				BC3B124A1AD7552E000CFEEE /* LaunchScreen.xib in Resources */,
+				BC3B12491AD7552B000CFEEE /* Main.storyboard in Resources */,
+				BC3B12481AD74378000CFEEE /* Bombs.json in Resources */,
 				BCB0F1061ACE4DFC00EA98EE /* Images.xcassets in Resources */,
+				BC076B931AD77440008D47BC /* BombnanzaTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,11 +242,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3B12461AD741B7000CFEEE /* AfterEffectsPageViewController.m in Sources */,
 				BC209FF01ACF297D002F5F3D /* KnowledgeTableViewController.m in Sources */,
+				BC076B961AD77DD8008D47BC /* PageContentViewController.m in Sources */,
+				BC076B991AD78D04008D47BC /* OneBombViewController.m in Sources */,
 				BC209FF31ACF299C002F5F3D /* BombRangeTableViewController.m in Sources */,
+				BC076B9C1AD796DF008D47BC /* TestingRangeViewController.m in Sources */,
 				BCB0F1011ACE4DFC00EA98EE /* ViewController.m in Sources */,
 				BCB0F0FE1ACE4DFC00EA98EE /* AppDelegate.m in Sources */,
 				BCB0F0FB1ACE4DFC00EA98EE /* main.m in Sources */,
+				BC076B9F1AD79946008D47BC /* BombBehavior.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCB0F1151ACE4DFC00EA98EE /* BombnanzaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,8 +328,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos6.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -348,7 +364,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -365,6 +382,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -379,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

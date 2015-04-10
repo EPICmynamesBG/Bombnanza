@@ -1,0 +1,41 @@
+{
+    "data" :
+    [
+     {
+     "name" : "Little Boy",
+     "country" : "United States",
+     "type" : "Nuclear",
+     "blastRadius" : "11000 ft",
+     "yield" : "12-18 kT",
+     "image" : "explosion",
+     "description" : "Lot's of stuff!"
+     },
+     {
+     "name" : "Big Boy",
+     "country" : "United States",
+     "type" : "Nuclear",
+     "blastRadius" : "5 kM",
+     "yield" : "18-23 kT",
+     "image" : "explosion",
+     "description" : "stuff"
+     },
+     {
+     "name" : "RDS-1",
+     "country": "USSR",
+     "type" : "Nuclear",
+     "blastRadius" : "x",
+     "yield" : "22 kT",
+     "image" : "explosion",
+     "description" : "Lot's of stuff!"
+     },
+     {
+     "name" : "Hurricane",
+     "country": "UK",
+     "type" : "Nuclear",
+     "blastRadius" : "??",
+     "yield" : "25 kT",
+     "image" : "explosion",
+     "description" : "Lot's of stuff!"
+     }
+     ]
+}

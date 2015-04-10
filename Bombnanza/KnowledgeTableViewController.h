@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KnowledgeTableViewController : UITableViewController
+@interface KnowledgeTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
