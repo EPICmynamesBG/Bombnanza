@@ -11,7 +11,6 @@
 		BC076B961AD77DD8008D47BC /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC076B951AD77DD8008D47BC /* PageContentViewController.m */; };
 		BC076B991AD78D04008D47BC /* OneBombViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC076B981AD78D04008D47BC /* OneBombViewController.m */; };
 		BC076B9C1AD796DF008D47BC /* TestingRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC076B9B1AD796DF008D47BC /* TestingRangeViewController.m */; };
-		BC076B9F1AD79946008D47BC /* BombBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = BC076B9E1AD79946008D47BC /* BombBehavior.m */; };
 		BC209FF01ACF297D002F5F3D /* KnowledgeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC209FEF1ACF297D002F5F3D /* KnowledgeTableViewController.m */; };
 		BC209FF31ACF299C002F5F3D /* BombRangeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC209FF21ACF299C002F5F3D /* BombRangeTableViewController.m */; };
 		BC3B12461AD741B7000CFEEE /* AfterEffectsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3B12451AD741B7000CFEEE /* AfterEffectsPageViewController.m */; };
@@ -42,8 +41,6 @@
 		BC076B981AD78D04008D47BC /* OneBombViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneBombViewController.m; sourceTree = "<group>"; };
 		BC076B9A1AD796DF008D47BC /* TestingRangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingRangeViewController.h; sourceTree = "<group>"; };
 		BC076B9B1AD796DF008D47BC /* TestingRangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingRangeViewController.m; sourceTree = "<group>"; };
-		BC076B9D1AD79946008D47BC /* BombBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BombBehavior.h; sourceTree = "<group>"; };
-		BC076B9E1AD79946008D47BC /* BombBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BombBehavior.m; sourceTree = "<group>"; };
 		BC209FEE1ACF297D002F5F3D /* KnowledgeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeTableViewController.h; sourceTree = "<group>"; };
 		BC209FEF1ACF297D002F5F3D /* KnowledgeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeTableViewController.m; sourceTree = "<group>"; };
 		BC209FF11ACF299C002F5F3D /* BombRangeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BombRangeTableViewController.h; sourceTree = "<group>"; };
@@ -130,8 +127,6 @@
 		BCB0F0F81ACE4DFC00EA98EE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC076B9D1AD79946008D47BC /* BombBehavior.h */,
-				BC076B9E1AD79946008D47BC /* BombBehavior.m */,
 				BCB0F0F91ACE4DFC00EA98EE /* Info.plist */,
 				BCB0F0FA1ACE4DFC00EA98EE /* main.m */,
 				BC3B12471AD74378000CFEEE /* Bombs.json */,
@@ -251,7 +246,6 @@
 				BCB0F1011ACE4DFC00EA98EE /* ViewController.m in Sources */,
 				BCB0F0FE1ACE4DFC00EA98EE /* AppDelegate.m in Sources */,
 				BCB0F0FB1ACE4DFC00EA98EE /* main.m in Sources */,
-				BC076B9F1AD79946008D47BC /* BombBehavior.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +368,7 @@
 		BCB0F1191ACE4DFC00EA98EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -382,7 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos8.3;
+				SDKROOT = iphoneos7.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -398,7 +393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos8.3;
+				SDKROOT = iphoneos7.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
