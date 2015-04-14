@@ -10,6 +10,6 @@
 
 @interface TestingRangeViewController : UIViewController
 @property (strong, nonatomic) NSDictionary *bombDict;
-@property (strong, nonatomic) NSTimer *timer;
+@property (strong, nonatomic) NSTimer *bombTimer;
 @property (nonatomic) CGPoint pos;
 @end

@@ -7,25 +7,25 @@
      "type" : "Nuclear",
      "blastRadius" : "11000 ft",
      "yield" : "12-18 kT",
-     "image" : "explosion",
+     "image" : "LittleBoy",
      "description" : "Lot's of stuff!"
      },
      {
-     "name" : "Big Boy",
+     "name" : "Fat Man",
      "country" : "United States",
      "type" : "Nuclear",
      "blastRadius" : "5 kM",
      "yield" : "18-23 kT",
-     "image" : "explosion",
-     "description" : "stuff"
+     "image" : "FatMan",
+     "description" : "Lot's of stuff!"
      },
      {
      "name" : "RDS-1",
      "country": "USSR",
      "type" : "Nuclear",
-     "blastRadius" : "x",
+     "blastRadius" : "??",
      "yield" : "22 kT",
-     "image" : "explosion",
+     "image" : "RDS-1",
      "description" : "Lot's of stuff!"
      },
      {
@@ -34,7 +34,16 @@
      "type" : "Nuclear",
      "blastRadius" : "??",
      "yield" : "25 kT",
-     "image" : "explosion",
+     "image" : "Hurricane",
+     "description" : "Lot's of stuff!"
+     },
+     {
+     "name" : "Ivy Mike",
+     "country": "United States",
+     "type" : "Nuclear Fussion",
+     "blastRadius" : "35 mi",
+     "yield" : "10400 kT",
+     "image" : "IvyMike",
      "description" : "Lot's of stuff!"
      }
      ]
