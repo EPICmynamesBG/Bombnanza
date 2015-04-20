@@ -1,0 +1,134 @@
+.gz_text
+{
+	font-weight: bolder;
+	font-size: 10px;
+	font-family: sans-serif;
+	margin: 1px;
+	color: #333;
+}
+.gz_c_t {font-size:10px;color:#333;background:#fff;}
+.gz_c_p {font-size:9px;color:#333;background:#fff;}
+.gz_c_1 {font-size:9px;background:#ff9933;color:#fff;}
+.gz_c_2 {font-size:9px;background:#cc6666;color:#fff;}
+.gz_c_3 {font-size:9px;background:#660066;color:#fff;}
+.gz_c_4 {font-size:9px;background:#333333;color:#fff;}
+.gz_p_1 {font-size:9px;background:#9370DB;color:#fff;}
+.gz_p_2 {font-size:9px;background:#007BA7;color:#fff;}
+.gz_p_3 {font-size:9px;background:#5218FA;color:#fff;}
+.gz_p_4 {font-size:9px;background:#4F4F95;color:#fff;}
+.gz_f_1 {font-size:9px;background:#44944A;color:#fff;}
+.gz_f_2 {font-size:9px;background:#D1E231;color:#fff;}
+.gz_f_3 {font-size:9px;background:#3FFF00;color:#fff;}
+.gz_f_4 {font-size:9px;background:#5A912F;color:#fff;}
+
+select {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    min-height: 30px;
+    margin: auto;
+    font-size: 28px;
+    COLOR: #AA3333; 
+    vertical-align:middle;
+}
+
+select option {
+    font-size: 28px;
+    text-align: center;
+}
+
+#address {
+    FONT-SIZE: 16px; 
+    COLOR: #333; 
+    margin: 2px;
+    font-weight: bold; 
+}
+
+#search {
+    FONT-SIZE: 16px; 
+    COLOR: #333; 
+    margin: auto;
+    font-weight: bolder;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    border: #666 1px solid; 
+    vertical-align: top;
+    width:100%;
+    height: 100%;
+    border: 0;
+}
+
+tr {
+    vertical-align: middle;
+    background-color: #eeeeee;
+}
+
+tr:last-child td{
+    height: 5%;
+    max-height: 15px;
+}
+
+tr:last-child td:last-child {
+    width: 30%;
+}
+
+#t_1 {
+    font-family:sans-serif;
+    FONT-SIZE: 2vw; 
+    COLOR: #333; 
+    margin: 1px
+}
+
+#address{
+    width: 100%;
+}
+
+#search{
+    width: 100%
+}
+
+option {
+    font-size: 2vw;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    tr:last-child td{
+        width: 50%;
+    }
+    
+    tr:last-child td div{
+        display: none;
+    }
+    
+    tr:last-child td:last-child {
+        width: 0;
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    tr:last-child td{
+        width: 50%;
+    }
+    
+    tr:last-child td div{
+        display: none;
+    }
+    
+    tr:last-child td:last-child {
+        width: 0;
+        visibility: hidden;
+        display: none;
+    }
+}

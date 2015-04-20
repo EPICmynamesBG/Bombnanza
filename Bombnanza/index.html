@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Ground Zero: Google Maps and Nuclear Weapons</title>       <link rel="stylesheet" type="text/css" href="index.css"/>
+	<script src="groundzero2_v2_0.js" type="text/javascript"></script>
+    </head>
+<body>
+<table cellspacing=1 cellpadding=0>
+<tr>
+	<td align="center" class="gz_text" valign="middle" colspan="3">
+		<div id="map"></div>
+	</td>
+</tr>
+<tr align="left">
+    <td width="30%">
+		    <input id="address" type="textbox" onclick="javascript:document.getElementById('address').value=''" onchange="codeAddress()">
+		    <input id="search" type="button" value="Search" onclick="codeAddress()">
+    </td>
+	<form name="yields">
+	<td width="33%">	
+		<select class="gz_text" name="selector" onchange="loadWeapon(this.form)">
+			<option value=0> Select a Weapon </option>
+			<option value=1>"Feb 2013" 7kt</option>
+			<option value=2>"Little Boy" 15kt</option>
+			<option value=3>"Fat Man" 21kt</option>
+			<option value=4>"Joe-4" 400kt</option>
+			<option value=5>"Mk28" 1.4mt</option>
+			<option value=6>"Tsar Bomba" 50mt</option>
+			<option value=7>"B61" 340kt</option>
+			<option value=8>"Ivy Mike" 12mt</option>
+			<option value=9>"DF-31" 140kt</option>
+			<option value=10>Asteroid Impact</option>			
+		</select>	 					
+	</td>
+	</form>
+	<td>
+        <div id="t_1"></div>		
+	</td>
+</tr>
+</table>
+</body>
+
+</html>

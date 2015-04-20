@@ -4,6 +4,7 @@
      {
      "name" : "Little Boy",
      "country" : "United States",
+     "year" : "1945",
      "type" : "Nuclear",
      "blastRadius" : "11000 ft",
      "yield" : "12-18 kT",
@@ -13,15 +14,17 @@
      {
      "name" : "Fat Man",
      "country" : "United States",
+     "year" : "1945",
      "type" : "Nuclear",
-     "blastRadius" : "5 kM",
+     "blastRadius" : "2000ft",
      "yield" : "18-23 kT",
      "image" : "FatMan",
      "description" : "Lot's of stuff!"
      },
      {
      "name" : "RDS-1",
-     "country": "USSR",
+     "country": "Soviet Union",
+     "year" : "1949",
      "type" : "Nuclear",
      "blastRadius" : "??",
      "yield" : "22 kT",
@@ -30,9 +33,10 @@
      },
      {
      "name" : "Hurricane",
-     "country": "UK",
+     "country": "United Kingdom",
+     "year" : "1952",
      "type" : "Nuclear",
-     "blastRadius" : "??",
+     "blastRadius" : "980ft radius, 20ft deep",
      "yield" : "25 kT",
      "image" : "Hurricane",
      "description" : "Lot's of stuff!"
@@ -40,10 +44,51 @@
      {
      "name" : "Ivy Mike",
      "country": "United States",
-     "type" : "Nuclear Fussion",
-     "blastRadius" : "35 mi",
+     "year" : "1952",
+     "type" : "Hydrogen (Nuclear)",
+     "blastRadius" : "6,240ft radius, 164ft deep",
      "yield" : "10400 kT",
      "image" : "IvyMike",
+     "description" : "Lot's of stuff!"
+     },
+     {
+     "name" : "Castle Bravo",
+     "country": "United States",
+     "year" : "1954",
+     "type" : "Nuclear Fussion",
+     "blastRadius" : "6,500ft radius, 250ft deep",
+     "yield" : "15000 kT",
+     "image" : "CastleBravo",
+     "description" : "Lot's of stuff!"
+     },
+     {
+     "name" : "RDS-37",
+     "country": "Soviet Union",
+     "year" : "1955",
+     "type" : "Thermo-Nuclear",
+     "blastRadius" : "??",
+     "yield" : "1600 kT",
+     "image" : "RDS-37",
+     "description" : "Lot's of stuff!"
+     },
+     {
+     "name" : "Orange Herald",
+     "country": "United Kingdom",
+     "year" : "1957",
+     "type" : "Nuclear Fission",
+     "blastRadius" : "??",
+     "yield" : "720 kT",
+     "image" : "OrangeHerald",
+     "description" : "Lot's of stuff!"
+     },
+     {
+     "name" : "Tsar Bomba",
+     "country": "Soviet Union",
+     "year" : "1961",
+     "type" : "Thermo-Nuclear",
+     "blastRadius" : "22 mi",
+     "yield" : "50000 kT",
+     "image" : "TsarBomba",
      "description" : "Lot's of stuff!"
      }
      ]

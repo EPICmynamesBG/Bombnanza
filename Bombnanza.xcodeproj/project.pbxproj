@@ -21,6 +21,10 @@
 		BCB0F0FE1ACE4DFC00EA98EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F0FD1ACE4DFC00EA98EE /* AppDelegate.m */; };
 		BCB0F1011ACE4DFC00EA98EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F1001ACE4DFC00EA98EE /* ViewController.m */; };
 		BCB0F1061ACE4DFC00EA98EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F1051ACE4DFC00EA98EE /* Images.xcassets */; };
+		BCB3AE721AE4B6920084D20B /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = BCB3AE6E1AE4B6920084D20B /* favicon.ico */; };
+		BCB3AE731AE4B6920084D20B /* groundzero2_v2_0.js in Resources */ = {isa = PBXBuildFile; fileRef = BCB3AE6F1AE4B6920084D20B /* groundzero2_v2_0.js */; };
+		BCB3AE741AE4B6920084D20B /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = BCB3AE701AE4B6920084D20B /* index.css */; };
+		BCB3AE751AE4B6920084D20B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = BCB3AE711AE4B6920084D20B /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		BCB0F1051ACE4DFC00EA98EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BCB0F1081ACE4DFC00EA98EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BCB0F10E1ACE4DFC00EA98EE /* BombnanzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BombnanzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB3AE6E1AE4B6920084D20B /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		BCB3AE6F1AE4B6920084D20B /* groundzero2_v2_0.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = groundzero2_v2_0.js; sourceTree = "<group>"; };
+		BCB3AE701AE4B6920084D20B /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
+		BCB3AE711AE4B6920084D20B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 		BCB0F0F71ACE4DFB00EA98EE /* Bombnanza */ = {
 			isa = PBXGroup;
 			children = (
+				BCB3AE6D1AE4B66D0084D20B /* WebMap */,
 				BCB0F0FC1ACE4DFC00EA98EE /* AppDelegate.h */,
 				BCB0F0FD1ACE4DFC00EA98EE /* AppDelegate.m */,
 				BCB0F0FF1ACE4DFC00EA98EE /* ViewController.h */,
@@ -132,6 +141,17 @@
 				BC3B12471AD74378000CFEEE /* Bombs.json */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCB3AE6D1AE4B66D0084D20B /* WebMap */ = {
+			isa = PBXGroup;
+			children = (
+				BCB3AE6E1AE4B6920084D20B /* favicon.ico */,
+				BCB3AE6F1AE4B6920084D20B /* groundzero2_v2_0.js */,
+				BCB3AE701AE4B6920084D20B /* index.css */,
+				BCB3AE711AE4B6920084D20B /* index.html */,
+			);
+			name = WebMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +235,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB3AE741AE4B6920084D20B /* index.css in Resources */,
 				BC3B124A1AD7552E000CFEEE /* LaunchScreen.xib in Resources */,
+				BCB3AE731AE4B6920084D20B /* groundzero2_v2_0.js in Resources */,
+				BCB3AE751AE4B6920084D20B /* index.html in Resources */,
 				BC3B12491AD7552B000CFEEE /* Main.storyboard in Resources */,
+				BCB3AE721AE4B6920084D20B /* favicon.ico in Resources */,
 				BC3B12481AD74378000CFEEE /* Bombs.json in Resources */,
 				BCB0F1061ACE4DFC00EA98EE /* Images.xcassets in Resources */,
 				BC076B931AD77440008D47BC /* BombnanzaTests in Resources */,
