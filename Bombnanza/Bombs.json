@@ -9,7 +9,7 @@
      "blastRadius" : "11000 ft",
      "yield" : "12-18 kT",
      "image" : "LittleBoy",
-     "description" : "Lot's of stuff!"
+     "description" : "Little Boy had its debut on August 6, 1945 when the U.S. dropped it over the city of Hiroshima, Japan. The blast resulted in 66,000 deaths and 69,000 injuries. While many others were produced during this time, Little Boy was the only one to actually be used in combat; similarly, it was the first nuclear bomb ever used in war."
      },
      {
      "name" : "Fat Man",
@@ -19,7 +19,7 @@
      "blastRadius" : "2000ft",
      "yield" : "18-23 kT",
      "image" : "FatMan",
-     "description" : "Lot's of stuff!"
+     "description" : "Fat Man previewed days after Little Boy on August 9, 1945 when it was dropped on Nagasaki, Japan. While Fat Man was bigger than Little Boy, it didn't hit its' target dead center, leading to only 35,000-45,000 deaths compared to Little Boy's 66,000. Fat Man was the third man-made nuclear explosion ever set off, and more than 120 Fat Man bombs were created between 1947 and 1949. In 1950, Fat Man was retired."
      },
      {
      "name" : "RDS-1",
@@ -29,7 +29,7 @@
      "blastRadius" : "??",
      "yield" : "22 kT",
      "image" : "RDS-1",
-     "description" : "Lot's of stuff!"
+     "description" : "RDS-1 was the Soviet Union's first nuclear weapon test. Development began in 1946, and took years to complete. This bomb was created similarly to the United States' Fat Man because USSR recieved extensive intelligence on it. Upon testing, the bomb actually proved 50% more destructive than engineers had expected. The RDS-1 was the start of a series of Russian nuclear bombs. RDS-1 was also known as First Lightning."
      },
      {
      "name" : "Hurricane",
@@ -39,7 +39,7 @@
      "blastRadius" : "980ft radius, 20ft deep",
      "yield" : "25 kT",
      "image" : "Hurricane",
-     "description" : "Lot's of stuff!"
+     "description" : "Project Hurricane was the first British testing of Nuclear bombs. Hurricane closely resembles the design of United States' Fat Man because several key British scientists who had worked on the Mahattan Project came back to Britain to help develop Hurricane. Unlike most other test scenarios, the British tested Hurricane in the hull of a ship ~1,000ft off the coast of Trimouille Island."
      },
      {
      "name" : "Ivy Mike",
@@ -49,7 +49,7 @@
      "blastRadius" : "6,240ft radius, 164ft deep",
      "yield" : "10400 kT",
      "image" : "IvyMike",
-     "description" : "Lot's of stuff!"
+     "description" : "Ivy Mike was the first full scale thermo-nuclear device to be tested in which part of the explosive yield comes from nuclear fusion. Due to it's physical size and fuel type, Ivy Mike actually was not suitable as a weapon. The 82 ton bomb was more of a factory than an actual bomb."
      },
      {
      "name" : "Castle Bravo",

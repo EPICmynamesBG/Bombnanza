@@ -10,6 +10,7 @@
 #import "Math.h"
 #include <unistd.h>
 #include <netdb.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface TestingRangeViewController () <UIAlertViewDelegate>
 @property (strong, nonatomic) UIImageView *fallingBomb;
@@ -151,15 +152,23 @@
     
     //animation
     [self.explosion startAnimating];
-    [UIView animateWithDuration:2.0 animations:^{
+    [UIView animateWithDuration:3.0 animations:^{
         self.explosion.frame = CGRectMake(x2, y2, imageWidth*self.growthFactor, imageHeight*self.growthFactor);
     }];
+    [self explosionSoundEffect];
     [self.explosion stopAnimating];
     [NSTimer scheduledTimerWithTimeInterval:3.5
                                      target:self
                                    selector:@selector(showMap:)
                                    userInfo:nil
                                     repeats:NO];
+}
+
+- (void) explosionSoundEffect {
+    SystemSoundID soundID;
+    NSString *soundFile = [[NSBundle mainBundle] pathForResource:@"ExplosionSound" ofType:@"mp3"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef) [NSURL fileURLWithPath:soundFile], &soundID);
+    AudioServicesPlaySystemSound(soundID);
 }
 
 - (void)calculateGrowthFactor {
