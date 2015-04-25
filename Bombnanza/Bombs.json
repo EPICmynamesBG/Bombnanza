@@ -29,7 +29,7 @@
      "blastRadius" : "??",
      "yield" : "22 kT",
      "image" : "RDS-1",
-     "description" : "RDS-1 was the Soviet Union's first nuclear weapon test. Development began in 1946, and took years to complete. This bomb was created similarly to the United States' Fat Man because USSR recieved extensive intelligence on it. Upon testing, the bomb actually proved 50% more destructive than engineers had expected. The RDS-1 was the start of a series of Russian nuclear bombs. RDS-1 was also known as First Lightning."
+     "description" : "RDS-1 was the Soviet Union's first nuclear weapon test. Development began in 1946, and took years to complete. This bomb was created similarly to the United States' Fat Man because USSR received extensive intelligence on it. Upon testing, the bomb actually proved 50% more destructive than engineers had expected. The RDS-1 was the start of a series of Russian nuclear bombs. RDS-1 was also known as First Lightning."
      },
      {
      "name" : "Hurricane",
@@ -39,7 +39,7 @@
      "blastRadius" : "980ft radius, 20ft deep",
      "yield" : "25 kT",
      "image" : "Hurricane",
-     "description" : "Project Hurricane was the first British testing of Nuclear bombs. Hurricane closely resembles the design of United States' Fat Man because several key British scientists who had worked on the Mahattan Project came back to Britain to help develop Hurricane. Unlike most other test scenarios, the British tested Hurricane in the hull of a ship ~1,000ft off the coast of Trimouille Island."
+     "description" : "Project Hurricane was the first British testing of Nuclear bombs. Hurricane closely resembles the design of United States' Fat Man because several key British scientists who had worked on the Manhattan Project came back to Britain to help develop Hurricane. Unlike most other test scenarios, the British tested Hurricane in the hull of a ship ~1,000ft off the coast of Trimouille Island."
      },
      {
      "name" : "Ivy Mike",
@@ -49,7 +49,7 @@
      "blastRadius" : "6,240ft radius, 164ft deep",
      "yield" : "10400 kT",
      "image" : "IvyMike",
-     "description" : "Ivy Mike was the first full scale thermo-nuclear device to be tested in which part of the explosive yield comes from nuclear fusion. Due to it's physical size and fuel type, Ivy Mike actually was not suitable as a weapon. The 82 ton bomb was more of a factory than an actual bomb."
+     "description" : "Ivy Mike was the first full scale thermo-nuclear device to be tested in which part of the explosive yield comes from nuclear fusion. Due to it's physical size and fuel type, Ivy Mike actually was not suitable as a weapon. The 82ton bomb was more of a factory than an actual bomb."
      },
      {
      "name" : "Castle Bravo",
@@ -59,7 +59,7 @@
      "blastRadius" : "6,500ft radius, 250ft deep",
      "yield" : "15000 kT",
      "image" : "CastleBravo",
-     "description" : "Lot's of stuff!"
+     "description" : "The most powerful bomb ever detonated by the United States, Castle Bravo was the first U.S. test of a dry fuel hydrogen bomb. This bomb was designed along the same pattern as Ivy Mike, but it was a priority to ensure this time that the bomb could actually be dropped from a plane. When this bomb was tested on March 1, 1954, the fireball from it was from over 250 miles away. At peak, the mushroom cloud reached a height of 130,000 ft and a diameter of 62 miles. After this explosion, there was much nuclear fallout that affected some islands and other nations, creating a lot of international reaction about atmospheric thermonuclear testing."
      },
      {
      "name" : "RDS-37",
@@ -69,7 +69,7 @@
      "blastRadius" : "??",
      "yield" : "1600 kT",
      "image" : "RDS-37",
-     "description" : "Lot's of stuff!"
+     "description" : "The RDS-37 was originally designed with a yield of 3000kT; however, it was scaled down before testing on November 22. This bomb was the Soviet Union's first two-stage hydrogen bomb. Despite the reduction, because of the bomb's drop location, it happened to cause a shock wave to roll across the ground and cause trench and building collapses up to 40 miles away, killing a few soldiers and a school girl."
      },
      {
      "name" : "Orange Herald",
@@ -79,7 +79,7 @@
      "blastRadius" : "??",
      "yield" : "720 kT",
      "image" : "OrangeHerald",
-     "description" : "Lot's of stuff!"
+     "description" : "While this bomb was claimed to be a hydrogen bomb at first, it was actually just a large boosted fission bomb. This bomb was quickly manufactured by the British to show that they are capable of creating megaton level weapons before a ban on atmospheric testing was enacted. There were actually two versions of Orange Herald- a small and a large. For testing, the UK used the smaller one."
      },
      {
      "name" : "Tsar Bomba",
@@ -89,7 +89,7 @@
      "blastRadius" : "22 mi",
      "yield" : "50000 kT",
      "image" : "TsarBomba",
-     "description" : "Lot's of stuff!"
+     "description" : "The Tsar Bomba is the largest man made artificial explosion in human history. This bomb was tested in the Arctic Circle with no human civilization within 100 miles of the testing grounds. When dropped, the shockwave from this bomb actually caused the plane that dropped it to fall 1kM in air before stabilizing. The fireball from this bomb was as high as the altitude of the release plane, and was visible over 620 miles away. At peak, the mushroom cloud reached a height of 40 miles (7x that of Mt. Everest) and a width of 59 miles. The shockwave from this explosion was still felt 430 miles away, and windowpanes were partially broken at distances of 960 miles away. Even in Norway and Sweden, windows were shattered from the blast. This bomb would have caused third degree burns on any unprotected individual within 100 miles."
      }
      ]
 }

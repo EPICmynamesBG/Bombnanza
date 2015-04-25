@@ -18,6 +18,7 @@
 		BC3B12491AD7552B000CFEEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F1021ACE4DFC00EA98EE /* Main.storyboard */; };
 		BC3B124A1AD7552E000CFEEE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F1071ACE4DFC00EA98EE /* LaunchScreen.xib */; };
 		BC9095611AEAB78000D38447 /* ExplosionSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC9095601AEAB78000D38447 /* ExplosionSound.mp3 */; };
+		BC9095671AEB60D400D38447 /* AfterEffects.json in Resources */ = {isa = PBXBuildFile; fileRef = BC9095661AEB60D400D38447 /* AfterEffects.json */; };
 		BCB0F0FB1ACE4DFC00EA98EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F0FA1ACE4DFC00EA98EE /* main.m */; };
 		BCB0F0FE1ACE4DFC00EA98EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F0FD1ACE4DFC00EA98EE /* AppDelegate.m */; };
 		BCB0F1011ACE4DFC00EA98EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB0F1001ACE4DFC00EA98EE /* ViewController.m */; };
@@ -54,6 +55,7 @@
 		BC3B12451AD741B7000CFEEE /* AfterEffectsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AfterEffectsPageViewController.m; sourceTree = "<group>"; };
 		BC3B12471AD74378000CFEEE /* Bombs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bombs.json; sourceTree = "<group>"; };
 		BC9095601AEAB78000D38447 /* ExplosionSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ExplosionSound.mp3; sourceTree = "<group>"; };
+		BC9095661AEB60D400D38447 /* AfterEffects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AfterEffects.json; sourceTree = "<group>"; };
 		BCB0F0F51ACE4DFB00EA98EE /* Bombnanza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bombnanza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB0F0F91ACE4DFC00EA98EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCB0F0FA1ACE4DFC00EA98EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				BCB0F0F91ACE4DFC00EA98EE /* Info.plist */,
 				BCB0F0FA1ACE4DFC00EA98EE /* main.m */,
 				BC3B12471AD74378000CFEEE /* Bombs.json */,
+				BC9095661AEB60D400D38447 /* AfterEffects.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB3AE741AE4B6920084D20B /* index.css in Resources */,
+				BC9095671AEB60D400D38447 /* AfterEffects.json in Resources */,
 				BC3B124A1AD7552E000CFEEE /* LaunchScreen.xib in Resources */,
 				BC9095611AEAB78000D38447 /* ExplosionSound.mp3 in Resources */,
 				BCB3AE731AE4B6920084D20B /* groundzero2_v2_0.js in Resources */,

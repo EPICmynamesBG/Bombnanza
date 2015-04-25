@@ -9,16 +9,18 @@
 #import "AfterEffectsPageViewController.h"
 
 @interface AfterEffectsPageViewController ()
-
+@property (strong, nonatomic) NSArray *jsonData;
+@property (strong, nonatomic) NSArray *pageIndex;
 @end
 
 @implementation AfterEffectsPageViewController
+#define DATAPATH @"AfterEffects.json"
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Create the data model
-    _pageTitles = @[@"1", @"2", @"3", @"4"];
-    _pageImages = @[@"explosion.png", @"explosion.png", @"explosion.png", @"explosion.png"];
+    _jsonData = [self loadJSON];
+    _pageIndex = @[@"1", @"2", @"3", @"4"];
     
     // Create page view controller
     self.dataSource = self;
@@ -35,21 +37,20 @@
     self.navigationController.navigationBarHidden = NO;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (PageContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
-    if (([self.pageTitles count] == 0) || (index >= [self.pageTitles count])) {
+    if (([self.pageIndex count] == 0) || (index >= [self.pageIndex count])) {
         return NULL;
     }
     // Create a new view controller and pass suitable data.
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
-    pageContentViewController.imageFile = self.pageImages[index];
-    pageContentViewController.titleText = self.pageTitles[index];
+    
+    //data
+    NSDictionary *data = [[NSDictionary alloc] initWithDictionary:[self.jsonData objectAtIndex:index]];
+    pageContentViewController.imageFile = [NSString stringWithFormat:@"PageView%@.png", self.pageIndex[index]];
     pageContentViewController.pageIndex = index;
+    pageContentViewController.titleText = [data objectForKey:@"title"];
+    pageContentViewController.textFieldText = [data objectForKey:@"content"];
     
     return pageContentViewController;
 }
@@ -77,7 +78,7 @@
     }
     
     index++;
-    if (index == [self.pageTitles count]) {
+    if (index == [self.pageIndex count]) {
         return nil;
     }
     return [self viewControllerAtIndex:index];
@@ -85,12 +86,24 @@
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return [self.pageTitles count];
+    return [self.pageIndex count];
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
 {
     return 0;
+}
+
+#pragma mark - Data Loading & Parsing
+
+- (NSArray *) loadJSON {
+    NSString *filepath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:DATAPATH];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSData *data = [fileManager contentsAtPath:filepath];
+    NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data
+                                                             options:0
+                                                               error:NULL];
+    return [jsonData objectForKey:@"data"];
 }
 
 @end

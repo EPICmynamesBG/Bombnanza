@@ -10,6 +10,4 @@
 #import "PageContentViewController.h"
 
 @interface AfterEffectsPageViewController : UIPageViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource>
-@property (strong, nonatomic) NSArray *pageTitles;
-@property (strong, nonatomic) NSArray *pageImages;
 @end

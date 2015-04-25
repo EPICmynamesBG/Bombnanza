@@ -9,7 +9,10 @@
 #import "PageContentViewController.h"
 
 @interface PageContentViewController ()
-
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UILabel *pageNumberLabel;
+@property (weak, nonatomic) IBOutlet UITextView *textFieldTextView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @end
 
 @implementation PageContentViewController
@@ -26,10 +29,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.backgroundImage.image = [UIImage imageNamed:self.imageFile];
+    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
     self.titleLabel.text = self.titleText;
-    
+    self.textFieldTextView.text = self.textFieldText;
+    self.pageNumberLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long) self.pageIndex+1];
 }
 
 - (void)didReceiveMemoryWarning

@@ -47,16 +47,15 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [self.fallingBomb isFirstResponder];
     [self calculateGrowthFactor];
     _fallRate = 1.0;
     _timerRepeat = YES;
-    
     _bombTimer = [NSTimer scheduledTimerWithTimeInterval:(0.03)
                                                   target:self
                                                 selector:@selector(drop)
                                                 userInfo:nil
                                                  repeats:self.timerRepeat];
-    
 }
 
 #pragma mark - Bomb Drop
@@ -106,7 +105,6 @@
     dropView.image = bomb;
     
     self.fallingBomb = dropView;
-    
     [self.view addSubview:self.fallingBomb];
 }
 
@@ -157,7 +155,7 @@
     }];
     [self explosionSoundEffect];
     [self.explosion stopAnimating];
-    [NSTimer scheduledTimerWithTimeInterval:3.5
+    [NSTimer scheduledTimerWithTimeInterval:4.5
                                      target:self
                                    selector:@selector(showMap:)
                                    userInfo:nil
