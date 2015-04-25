@@ -38,6 +38,7 @@
         self.blastYield.text = [NSString stringWithFormat:@"Blast Yield: %@", [self.bombDict objectForKey:@"yield"]];
         self.descTextField.text = [self.bombDict objectForKey:@"description"];
         
+        //rotate and set image
         UIImage *bomb = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", [self.bombDict objectForKey:@"image"]]];
         CGImageRef imageRef = [bomb CGImage];
         UIImage *rotatedImage = [UIImage imageWithCGImage:imageRef scale:1.0 orientation:UIImageOrientationLeft];
@@ -55,21 +56,27 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.descTextField.preferredMaxLayoutWidth = self.view.bounds.size.width-32;
+    if (self.view.bounds.size.width > 400){
+        self.descTextField.preferredMaxLayoutWidth = self.view.bounds.size.width - 64;
+    } else {
+        self.descTextField.preferredMaxLayoutWidth = self.view.bounds.size.width - 32;
+    }
     [self.descTextField setNeedsDisplay];
 }
-
+/*
 -(BOOL)shouldAutorotate{
     return YES;
 }
+
 
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     if (toInterfaceOrientation == UIDeviceOrientationLandscapeLeft || toInterfaceOrientation == UIDeviceOrientationLandscapeRight){
         self.descTextField.preferredMaxLayoutWidth = self.view.bounds.size.width-32;
     } else {
-        self.descTextField.preferredMaxLayoutWidth = self.view.bounds.size.width-32;
+        
     }
     [self.descTextField setNeedsDisplay];
 }
+ */
 
 @end
