@@ -16,6 +16,10 @@
 @implementation AfterEffectsPageViewController
 #define DATAPATH @"AfterEffects.json"
 
+-(void)didReceiveMemoryWarning {
+    NSLog(@"Memory Warning");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Create the data model
@@ -29,7 +33,7 @@
     
     NSArray *viewControllers = @[startingViewController];
     [self setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
+    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
 }
 
 - (void)viewWillAppear:(BOOL)animated{
